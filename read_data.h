@@ -1,0 +1,11 @@
+void initialize_data (vars_struct &data, char *filename);
+void read_data (int *ref, int *dset, int *flt, double *hjd, double *val, double *err, int &n_data, int &n_phot_bands, int &n_velo_lines, int &n_ref, const char *filein);
+void read_objects(int n_stars, char **sn_name, const char *filein);
+void read_gal(int n_stars, int *name_gal, const char *filein, char **gal_name);
+void read_global(double *a,  vars_struct data, const char *filein);
+void read_sn_pars(double *a, vars_struct data, const char *filein);
+void read_covar_full(double **covar, int n_coef, char *filename);
+void read_covar_global(double **covar, int n_coef, char *filename);
+int read_block_star_band(int *star, int *dset, int *band, const char *filein);
+int read_block_point(int *star, int *dset, int *band, double *jd, const char *filein);
+int read_block_star_ref(int *star, int *dset, int *ref, const char *filein);

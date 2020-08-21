@@ -1,0 +1,131 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Homepage of Ondrej Pejcha</title>
+
+<meta http-equiv="content-type" content="text/html" />
+<meta http-equiv="content-language" content="en" />
+<meta http-equiv="imagetoolbar" content="false" />
+<meta name="author" content="Ondrej Pejcha" />
+<meta name="description" content="Homepage of Ondrej Pejcha" />
+<meta name="keywords" content="supernovae Type II-Plateau, light curve, velocity" />
+</head>
+<body background="../back.gif" bgcolor="#FFFFFF">
+<table border=0 width="100%">
+<td width="350px"><img src="SN1999em.png" align="left" valign="top"></td>
+<td>
+<h2  align="center">A Global Model of the Light Curves and Expansion Velocities of Type II-Plateau Supernovae</h2>
+
+<br>
+<h3 align="center">O. Pejcha<sup>1</sup> and J. L. Prieto<sup>2</sup></h3>
+<h4 align="center"><sup>1</sup> Hubble and Lyman Spitzer Jr. Fellow, Department of Astrophysical Sciences, Princeton, NJ, USA<br/>
+<sup>2</sup> Nucleo de Astronomia de la Facultad de Ingenieria, Universidad Diego
+Portales & Millennium Institute of Astrophysics, Santiago, Chile</h3>
+<h4 align="center">Email: pejcha_[at]_astro_[dot]_princeton_[dot]_edu </h2>
+<h4 align="center"><a href="http://adsabs.harvard.edu/abs/2015ApJ...799..215P">Link to our paper</a></h2>
+<td width="350px" valign="top"><img src="SN2012A.png" align="right" valign="top"></td>
+</table>
+<br/>
+<br/>
+We present a new self-consistent and versatile method that derives photospheric radius and temperature variations of Type II-Plateau supernovae based on their expansion velocities and photometric measurements. We apply the method to a sample of 26 well-observed, nearby supernovae with published light curves and velocities. We simultaneously fit ~230 velocity and ~6800 magnitude measurements distributed over 21 photometric passbands spanning wavelengths from 0.19 to 2.2 &mu;m. The light curve differences among the Type II-Plateau supernovae are well-modeled by assuming different rates of photospheric radius expansion, which we explain as different density profiles of the ejecta and we argue that steeper density profiles result in flatter plateaus, if everything else remains unchanged. The steep luminosity decline of Type II-Linear supernovae is due to fast evolution of the photospheric temperature, which we verify with a successful fit of SN1980K. Eliminating the need for theoretical supernova atmosphere models, we obtain self-consistent relative distances, reddenings, and nickel masses fully accounting for all internal model uncertainties and covariances. We use our global fit to estimate the time evolution of any missing band tailored specifically for each supernova and we construct spectral energy distributions and bolometric light curves. We produce bolometric corrections for all filter combinations in our sample. We compare our model to the theoretical dilution factors and find good agreement for the B and V filters. Our results differ from the theory when the I, J, H, or K bands are included. We investigate the reddening law towards our supernovae and find reasonable agreement with standard R<sub>V</sub> ~ 3.1 reddening law in UBVRI bands. Results for other bands are inconclusive. We make our fitting code publicly available.
+</p>
+
+<h4 style="color:#FF0000">Update Feb 23 2016: physical parameters of supernovae from our followup paper are <a href="covariance.html">available</a></h4>
+<h4 style="color:#FF0000">Update Nov 25 2014: the paper has been accepted for publication</h4>
+<h4 style="color:#FF0000">Update Nov 17 2014: the current version of the code now uses the same priors on supernova parameters as in our paper. GSL and GSLCBLAS are required for this functionality (eigenvectors & eigenvalues)</h4>
+
+
+<h4>Light curve fits</h4>
+<a href="SN1980K.eps">SN1980K</a>,
+<a href="SN1992am.eps">SN1992am</a>,
+<a href="SN1992H.eps">SN1992H</a>,
+<a href="SN1995ad.eps">SN1995ad</a>,
+<a href="SN1996W.eps">SN1996W</a>,
+<a href="SN1999em.eps">SN1999em</a>,
+<a href="SN1999gi.eps">SN1999gi</a>,
+<a href="SN2001dc.eps">SN2001dc</a>,
+<a href="SN2002hh.eps">SN2002hh</a>,
+<a href="SN2004A.eps">SN2004A</a>,
+<a href="SN2004dj.eps">SN2004dj</a>,
+<a href="SN2004et.eps">SN2004et</a>,
+<a href="SN2005cs.eps">SN2005cs</a>,
+<a href="SN2006bp.eps">SN2006bp</a>,
+<a href="SN2006my.eps">SN2006my</a>,
+<a href="SN2007od.eps">SN2007od</a>,
+<a href="SN2008in.eps">SN2008bk</a>,
+<a href="SN2009bw.eps">SN2009bw</a>,
+<a href="SN2009dd.eps">SN2009dd</a>,
+<a href="SN2009js.eps">SN2009js</a>,
+<a href="SN2009md.eps">SN2009md</a>,
+<a href="SN2009N.eps">SN2009N</a>,
+<a href="SN2010aj.eps">SN2010aj</a>,
+<a href="SN2012A.eps">SN2012A</a>,
+<a href="SN2012aw.eps">SN2012aw</a>
+
+<h4>Bolometric corrections</h4>
+We give a <a href="bc.tex">table</a> of fits to bolometric correction for band <i>j</i>, BC<sub><i>j</i></sub> = M<sub>bol</sub> - M<sub><i>j</i></sub>, as a function of color index m<sub><i>i</i></sub> - m<sub><i>j</i></sub>. The table columns are the color index name (e.g. B-V), range of color index m<sub><i>i</i></sub> - m<sub><i>j</i></sub>, where the fit is valid, coefficients <i>c</i><sub>0</sub>, <i>c</i><sub>1</sub>, <i>c</i><sub>2</sub>, <i>c</i><sub>3</sub>, and <i>c</i><sub>4</sub> of the fitting equation BC<sub><i>j</i></sub> = &Sigma;<sub><i>k</i>=0...4</sub> <i>c<sup>k</sup></i> (m<sub><i>i</i></sub> - m<sub><i>j</i></sub>)<sup><i>k</i></sup>. The last column is the standard deviation about the fit &sigma;, which measures only the goodness of fit and not how accurately is BCj obtained from the data.
+
+<h4>Code description</h4>
+<p>The fitting code can be downloaded <a href="iip.zip">here</a>. The code is a minimally stripped down version of considerably more complex code and a lot of bells and whistles not interfering with the current functionality were not removed. Please beware when tinkering around, especially for segmenation faults resulting from array allocation and access. The code was tested under Linux and Cygwin, but is certainly not error-free.
+<p>The code reads in data of a single supernova, fits it with the model of our paper (using the global parameters from the paper) and returns the parameter values, their uncertainties (including modified fit with &chi;<sup>2</sup>/N<sub>DOF</sub>=1) and model fits. Two test datasets of SN2004et and SN2009N are supplied compiled from the work of <a href="http://adsabs.harvard.edu/abs/2010MNRAS.404..981M">Maguire et al. (2010)</a>, <a href="http://adsabs.harvard.edu/abs/2014ApJ...787..157P">Pritchard et al. (2014)</a>, and <a href="http://adsabs.harvard.edu/abs/2014MNRAS.438..368T">Takats et al. (2014)</a>. Note that the fit results for these supernovae are slightly different from what was reported in our paper. The reason are the missing priors, and in case of SN2004et in NGC6946 we are obtaining the host galaxy distance only from one supernova and not three (SN2002hh and SN1980K in addition).
+
+<h4>Installation</h4>
+The code was successfully compiled and executed under Linux, Cygwin, and Mac.
+<p>Go to directory <tt>cmpfit-1.2</tt> and type <tt>make</tt>. This compiles the fitting routine <a href="http://www.physics.wisc.edu/~craigm/idl/cmpfit.html">CMPFIT</a>, which has been modified to handle a large covariance matrix and reports &chi;<sup>2</sup> in every iteration.
+<p>Now go back to the original directory and look in <tt>Makefile</tt>. If you are under Cygwin, change <tt>LDFLAGS_CYGWIN</tt> to <tt>LDFLAGS</tt>. This increases the stack size, but the requisite compiler command is not recognized under Linux. Now execute <tt>make fit_single</tt>, which should compile the code (with a bunch of warnings).
+
+<h4>Input</h4>
+
+<p>When you successfuly compile the code, then it should be set up so that you get results just by running <tt>./fit_single.exe SN2004et.dat</tt> or <tt>./fit_single.exe SN2009N.dat</tt>. The source code is only minimally documented, but proceeds along the general lines of reading in the data, initializing fit coefficients, choosing which variables to fit, and exporting the results. There are comments on how to impose limits on parameters or fix their values. This is important for explosion times and distances.
+
+<p> The columns in the data input file are<br>
+<tt>ref   dset   flt   jd    val   err</tt><br>
+where <tt>ref</tt> is the label for data reference (the code can in principle handle blocking individual data sources, photometric bands and individual data points, but most of the functionality is disabled in the public version), <tt>dset</tt> is 0 for expansion velocity and 1 for photometry, <tt>flt</tt> is the label of photometric band explained below or the line used to obtain expansion velocity (0 for Fe II 5169), <tt>val</tt> and <tt>err</tt> are the value and uncertainty of the measurement.
+
+<p>The filter labels are:
+<pre>U	0
+B	1
+V	2
+R	3
+I	4
+J	5
+H	6
+K	7
+g	9	#SDSS DR7 SDSS = AB - 0.02
+r	10	#SDSS DR7 SDSS = AB - 0.02
+i	11	#SDSS DR7 SDSS = AB - 0.02
+z	12	#SDSS DR7 SDSS = AB - 0.02
+uvw2	13	#Swift uvw2 @ 1928A
+uvm2	14	#Swift uvm2 @ 2246A
+uvw1	15	#Swift uvw1 @ 2600A
+u	16	#Swift u    @ 3465A
+b	17	#Swift b    @ 4392A
+v	18	#Swift v    @ 5468A
+Z	19	# Hamuy et al. (2001) - on 1999em
+Y	20	# in the YJHK series?
+</pre>
+Do not use filter numbers not listed here - these are placeholders for other filters, where we weren't able to obtain enough data to constrain global parameters. Using such bands will make the fits wrong.
+
+<h4>Output</h4>
+<p> The code prints to terminal parameter values and their uncertainties (both default and with &chi;<sup>2</sup>/DOF set to unity) and also nickel mass and bolometric luminosity at 50 days after the explosion. Note that the parameter values can be different from what we give in the paper, because this is a simpler version of the code without priors or simultaneous fitting of multiple supernovae.</p>
+
+<p>The output file <tt>phot.dat</tt> outputs the photometric measurements and model parameters at each point. The columns are<br>
+<tt>JD  mag  mag_err  filter  star_no  dy  Pi  tau  1-w</tt><br>
+where <tt>star_no</tt> should be always equal to 0, <tt>dy</tt> is the relative difference between data and the model (data-model)/sigma, <tt>Pi</tt> is the dimensionless radius, <tt>tau</tt> is the temperature parameter, and <tt>1-w</tt> is the weight function.
+
+<p>The output file <tt>velo.dat</tt> is the same but for velocities and the columns are<br>
+<tt>JD  mag  mag_err  filter  star_no  dy  Pi 1-w</tt><br>
+
+<p>The output file <tt>model_phot.dat</tt> has the results of the model on a uniform temporal grid with each column corresponding to a different passband explained in the file header. See filter codes above.
+
+<p>The output file <tt>model_velo.dat</tt> is the model predictions for velocity.
+
+<p>The output file <tt>lbol_err.dat</tt> has the bolometric luminosity as a function of time calculated according to our paper. The first column is JD, second column is bolometric luminosity in solar luminosities, third column is the uncertainty from the covariance matrix of the fitted supernova parameters, fourth column is the uncertainty from the covariance matrix of the global parameters obtained in the full fit of our model, and fifth column has these two uncertainties added in quadrature.
+
+
+<h4>Notes</h4>
+<ul>
+<li>There are some comments in fit_single.cpp on how to handle initial parameter values and the allowed range of their variations. Especially important are limits on the explosion time (or distance) in the case of supernovae with few data.
+<li>If it the code doesn't work in the way you'd like to, please contact us, we'd be happy to help.</li>
+</ul>
+</body>
+</html>

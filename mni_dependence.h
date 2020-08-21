@@ -1,0 +1,1 @@
+void mni_dependence(vars_struct data, double *a, const int star_no);

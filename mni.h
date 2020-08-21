@@ -1,0 +1,2 @@
+void calculate_mni(vars_struct data, double *a, double &mni, double &mni_err, double &l50, double &l50_err);
+double log10_mni(vars_struct data, double *a, const int star_no, const int phot_band, const double time);

@@ -1,0 +1,12 @@
+void write_sn_pars(double *a, vars_struct data);
+void write_sn_pars_err(double *a, vars_struct data, double *uncert, double *uncert_rescaled);
+void write_sn_pars_err_full(double *a, vars_struct data, double *uncert, char *filename);
+void write_global(double *a, vars_struct data);
+void write_global_err(double *a, vars_struct data, double *uncert, char *filename);
+void write_koef(double *a, vars_struct data);
+void write_model(double *a, vars_struct data);
+void write_data(double *a, vars_struct data);
+void write_covar_snpar(vars_struct data, double *covar, long n_coef);
+void write_covar_global(vars_struct data);
+void write_full_covar(vars_struct data, const int n_coef, char *filename);
+void write_mintime(double *a, vars_struct data);

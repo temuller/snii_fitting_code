@@ -1,0 +1,1 @@
+double global_covar[1000][1000];
