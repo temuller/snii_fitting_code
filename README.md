@@ -22,16 +22,16 @@ These output files have slightly different names from previous versions of the c
 There are comments added with the changes made, but let me know if there is anything not clear.
 An `index.html` file is included with information from the Ondřej's website from Princeton.
 
-I created a python script (`show_output.py`) to plot the output fits from the modified code. This
-helps to have a quick look and see if the fits are working correctly. You have to run it from the
-code's top directory (where the `fit_single.cpp` file is) and it will ask you for the SN name. 
-You can run this by typing:
+I created a python script (`show_output.py`) to plot the output fits from the modified code 
+(run this from the top directory, `src` by default). Thishelps to have a quick look and see 
+if the fits are working correctly. You have to run it from the code's top directory (i.e., 
+where the `fit_single.cpp` file is) and it will ask you for the SN name. You can run this by typing:
 
 ```
 $ python show_output.py
 ```
 
-### Installation 
+## Installation 
 
 To build the package you need to follow these steps:
 
@@ -49,20 +49,28 @@ and that is all. You can try it with an example file it comes along the installa
 $ ./fit_single.exe SN2013am.dat
 ```
 
-If it doesn't complain or give you any error, you are ready!
+The code will ask you to give the SN name. If you input `SN2013am`, a directory with that exact name 
+will be created and all the output files of the SN will end there. If it doesn't complain or give you any error, you are ready!
+**Note** that in order for the code to work, apart from the photometry, at least one velocity measurement should be included.
+
+## Issues and Contributing
+
+If you would like to contribute or raise issues, you can either 1) submit an [issue on Github](https://github.com/temuller/snii_fitting_code/issues)
+(and submit a pull request if you wish) or 2) drop me, Ondřej or both an email.
+
 
 ## Input File 
 
 These are the columns the input files must have: ref dset flt mjd val err. See below a more detailed description of these:
 
-| column  |  dtype   |                           Description                      	          |
-|:-------:|:--------:|:--------------------------------------------------------------------------:|
-|  ref 	  |  integer |this does not really do anything, at least that I know                      |
-|  dset	  |  integer |1 for photometry or 0 for velocities (FeII 5169 only)	                  |
-|  flt 	  |  integer |filter number (see below). If dset==0, set it to 0                          |
-|  mjd 	  |   float  |modified julian date [MJD] (I believe it also works with julian dates [JD]) |
-|  val 	  |   float  |magnitudes (if dset==1) or velocities in m/s (if dset==0)                   |
-|  err 	  |   float  |error of 'val'                                                              |
+| column  |  dtype   |                    Description                           |
+|:-------:|:--------:|:--------------------------------------------------------:|
+|  ref 	  |  integer |this does not really do anything, at least that I know    |
+|  dset	  |  integer |1 for photometry or 0 for velocities (FeII 5169 only)	|
+|  flt 	  |  integer |filter number (see below). If dset==0, set it to 0        |
+|  mjd 	  |   float  |modified julian date [MJD]                                |
+|  val 	  |   float  |magnitudes (if dset==1) or velocities in m/s (if dset==0) |
+|  err 	  |   float  |error of 'val'                                            |
 
 
 Filter numbers for **flt** column:
