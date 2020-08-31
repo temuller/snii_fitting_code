@@ -69,7 +69,7 @@ These are the columns the input files must have: ref dset flt mjd val err. See b
 |  dset	  |  integer |1 for photometry or 0 for velocities (FeII 5169 only)	|
 |  flt 	  |  integer |filter number (see below). If dset==0, set it to 0        |
 |  mjd 	  |   float  |modified julian date [MJD]                                |
-|  val 	  |   float  |magnitudes (if dset==1) or velocities in m/s (if dset==0) |
+|  val 	  |   float  |magnitudes (if dset==1) or velocities in km/s (if dset==0) |
 |  err 	  |   float  |error of 'val'                                            |
 
 
